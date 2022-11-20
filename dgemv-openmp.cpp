@@ -25,7 +25,7 @@ void my_dgemv(int n, double* A, double* x, double* y) {
    // and you may want to comment out the above parallel code block that prints out
    // nthreads and thread_id so as to not taint your timings
 
-   #pragma omp parallel for reduction(+:sum)
+   #pragma omp parallel for reduction(+:A[j])
 
    for(int j = 0; j <= n; j++){
 
