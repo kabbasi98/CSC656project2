@@ -18,4 +18,5 @@ void my_dgemv(int n, double* A, double* x, double* y) {
          answer += matrix[i] * x[i];
          y[j] += answer; 
       }
+   }
 }
